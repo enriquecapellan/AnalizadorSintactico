@@ -1,0 +1,31 @@
+package analizer;
+
+import java_cup.runtime.Symbol;
+
+parser code
+{:
+    private Symbol s;
+
+    public void syntax_error(Symbol s){
+        this.s = s;
+    }
+
+    public Symbol getS(){
+        return this.s;
+    }	
+:};
+
+terminal If, Abre_Parentesis, Cierra_Parentesis, Mayor, Mayor_Igual, Menor, Menor_Igual, No_Igual, Igual, ERROR;
+terminal Integer  Numero;
+non terminal INICIO, SENTENCIA;
+
+start with INICIO;
+
+INICIO ::= If Abre_Parentesis SENTENCIA:sen Cierra_Parentesis {: RESULT = sen; :};
+
+SENTENCIA ::= Numero:n1 Mayor Numero:n2 {: RESULT = n1.intValue() > n2.intValue(); :}
+    | Numero:n1 Menor Numero:n2 {: RESULT = n1.intValue() < n2.intValue(); :}
+    | Numero:n1 Mayor_Igual Numero:n2 {: RESULT = n1.intValue() >= n2.intValue(); :}
+    | Numero:n1 Menor_Igual Numero:n2 {: RESULT = n1.intValue() <= n2.intValue(); :}
+    | Numero:n1 Igual Numero:n2 {: RESULT = n1.intValue() == n2.intValue(); :}
+    | Numero:n1 No_Igual Numero:n2 {: RESULT = n1.intValue() != n2.intValue(); :};
