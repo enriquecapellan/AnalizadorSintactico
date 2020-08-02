@@ -34,7 +34,7 @@ Los **integrantes** de este grupo son:
 * *Víctor Mercedes*:   **19-0749**
 * *Luis Liranzo*:      **19-0734**
 * *Alan Martínez*:     **19-0789**
-* *Rubén Cabrerja*:    **19-0768**
+* *Rubén Cabreja*:     **19-0768**
 * *Cristian Almanzar*: **18-1032**
 
 
