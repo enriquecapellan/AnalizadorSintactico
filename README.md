@@ -20,6 +20,9 @@ if(5 != 5) RESULTADO = FALSE
 ```java
 if(8 == 3) RESULTADO = FALSE
 ```
+
+![Captura](https://github.com/enriquecapellan/AnalizadorSintactico/blob/master/Annotation%202020-08-01%20121007.png?raw=true)
+
 Este proyecto fue hecho utilizando las siguientes **herramientas**:
 * [**Java JDK 8**](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 * [**JFlex v1.4.3**](https://mega.nz/#!kp5wmSTR!VRGITdbm5zuSWDMeZ8hVgVYWCNl-J0gMcAqQ2k8FBfM)
