@@ -36,5 +36,3 @@ Los **integrantes** de este grupo son:
 * *Alan Martínez*:     **19-0789**
 * *Rubén Cabreja*:     **19-0768**
 * *Cristian Almanzar*: **18-1032**
-
-
